@@ -1,0 +1,10 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

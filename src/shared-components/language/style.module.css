@@ -1,0 +1,6 @@
+.wrapper {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  background-color: inherit;
+}
