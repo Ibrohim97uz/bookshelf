@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 export default function Bookshelf() {
   return (
-    <div>
+    <div style={{ padding: "0 10px" }}>
       <Navbar />
       <Books />
     </div>

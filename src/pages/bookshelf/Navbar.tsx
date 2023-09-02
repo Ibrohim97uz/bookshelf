@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import UseLogout from "../../hooks/UseLogout";
 import UseModal from "../../shared-components/Modal";
 import CreateBook from "./create-book/CreateBook";
+import Language from "../../shared-components/language";
 
 export default function Navbar() {
   const { t } = useTranslation();
@@ -15,6 +16,9 @@ export default function Navbar() {
     <>
       <div className={styles.navbar}>
         <Avatar sx={{ height: 100, width: 100 }} src={book} />
+        <div className={styles.language}>
+          <Language />
+        </div>
         <div className={styles.buttons}>
           <Button onClick={open} variant="contained">
             {t("Create new book")}
@@ -27,6 +31,7 @@ export default function Navbar() {
         </div>
       </div>
       <hr />
+      <br />
     </>
   );
 }
